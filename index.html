@@ -3,79 +3,96 @@
     <head><!--passagem de metadados-->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device=width, initial-scale=1">
-        <title>workshop CSS Básico</title>
+        <title>Site do Batman</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            body{
+                box-sizing:content-box;
+            }
+
+            body{
+                margin:0;
+                color:aliceblue;
+                background-color:black;
+                font-family:system-ui, Arial, sans-serif;
+                line-height: 1.5;
+            }
+
+            .container{
+                width: 900px;
+                margin: 0 auto;
+                padding: 10px;
+            }
+
+            .box{
+                background:rgba(0, 0, 0, 0.75);
+                border: 1px solid rgba(240, 240, 255, 0.35);
+                border-radius: 12px;
+                padding: 14px;
+                margin-bottom: 12px;
+            }
+        </style>
     </head>
-    <body>
-        <header>
-            <h1>Workshop CSS Básico</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">início</a></li>
+    <body id="topo">
+        <div class="container" id="pagina">
+            <header calss="box" id="cabeçalho">
+                <div class="header-interno">
+                    <h1 class="título">Site do Batman</h1>
+                    <p class="subtítulo">
+                        Gothan City:<strong>vigilância</strong>, <em>estratégica
+                        </em> e tecnologia.
+                    </p>
+                </div>
+            </header>
+            <nav class="box" id="menu">
+                <ul class="nav">
+                    <li><a class="nav link" href="#apresentação"> Quem é?</a></li>
+                    <li><a class="nav link" href="#galeria"> Galeria</a></li>
+                    <li><a class="nav link" href="#rodape"> Rodapé</a></li>
                 </ul>
             </nav>
+            <main id="conteudo">
+                <section class="box" id="apresentação">
+                    <h2>Quem é o Batman?</h2>
+                    <p>
+                        Batman (Bruce Wayne) é um personagem da DC Comics e atua como justiceiro(sem ninguém ter pedido isso a ele)
+                        de Gothan. Ele não tem superpoderes: sua força está em
+                        <strong>treinamento</strong>, <em>tecnologia</em> e riqueza(muita riqueza).
+                    </p>
+                    <p>
+                        Em várias histórias, Gothan representa
+                        problemas sociais: deseigualdade, corrupção e violência urbana.
+                        Alguns quadrinhos usam o Batman como forma de <strong>crítica social</strong>,
+                        mostrando como falahs nas instituições, interesses econômico e autoritarismo
+                        afetam principalmente quem tem menos direitos e oportunidades
+                    </p>
+                </section>
 
-        </header>
-        <main>
-            <section>
-                <h2>Introdução</h2>
-                <p> este é um exemplo de página estruturada com <strong>HTML semântico</strong> para aplicar
-                estilos com CSS. Você também pode usar <em>ênfase</em> no texto.</p>
-            </section>
+                <section class="box" id="galeria">
+                    <h2>Galeria</h2>
+                    <div class="gallery" id="galeira-imagens">
+                        <img class="bat-img" src="batman1.jpg"
+                        alt="Batman Absoluto" width="220" height="120">
+                        <img class="bat-img" src="batman2.jpg"
+                        alt="Batman" width="220" height="120">
+                        <img class="bat-img" src="batman3.jpg"
+                        alt="Batman que Ri" width="220" height="120">
+                    </div>
+                </section>
+            </main>
 
-            <section>
-                <h2>Lista de tópicos</h2>
+            <footer class="box" id="rodape">
+                <p>
+                    <a class="link" href="#topo">Topo</a>
+                </p>
 
-                <ul>
-                    <li>Estrutura básica</li>
-                    <li>Navegação</li>
-                    <li>Imagens</li>
-                    <li>Tabelas</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Imagem</h2>
-                <img src="https://picsum.photos/800/400" alt="Imagem de exemplo">
-            </section>
-
-            <section>
-                <h2>Tabela de Conteúdos</h2>
-
-                <table>
-                    <thead><!--cabeçalho-->
-                        <tr>
-                            <th>Recurso</th>
-                            <th>Descrição</th>
-                        </tr>
-                    </thead>
-
-                    <tbody><!--Corpo de informações-->
-                        <tr>
-                            <td>Header</td>
-                            <td>Parte superior da página</td>
-                        </tr>
-                        <tr>
-                            <td>Main</td>
-                            <td>Conteúdo Principal</td>
-                        </tr>
-                        <tr>
-                            <td>Footer</td>
-                            <td>Rodapé</td>
-                        </tr>
-
-                    </tbody>
-
-                    <tfoot><!--Rodapé-->
-                        <tr>
-                            <td colspan="2">Exemplo de estrutura organizada.</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </section>
-
-        </main>
-        <footer>
-            <p>2026 - Projeto educacional de HTML e CSS</p>
-        </footer>
+                <p>
+                    Exemplo de website para treino de HTML e CSS.
+                </p>
+            </footer>
+        </div>
     </body>
 </html>
