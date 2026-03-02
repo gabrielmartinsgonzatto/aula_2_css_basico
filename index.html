@@ -2,7 +2,7 @@
 <html lang="pt-br">
     <head><!--passagem de metadados-->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device=width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Site do Batman</title>
         <style>
             *{
@@ -34,11 +34,80 @@
                 padding: 14px;
                 margin-bottom: 12px;
             }
+
+            h1,h2{
+                color: rgb(255,221,0);
+                margin: 0 0 8px;
+            }
+
+            .subtitulo{
+                margin: 0;
+                color: #d1d5db;
+            }
+
+            p{
+                color:aqua;
+            }
+
+            #apresentação{
+                border-left: 8px solid rgb(255, 221, 0);
+            }
+
+            .nav{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                gap: 10px;
+                flex-wrap: nowrap;
+            }
+
+            .nav-link{
+                display: inline-block;
+                text-decoration: none;
+                color:black;
+                background: rgb(255, 221, 0);
+                padding: 8px 10px;
+                border-radius: 10px;
+                font-weight: 700;
+            }
+
+            .nav-link:hover{
+                background: rgb(255, 200, 0);
+            }
+
+            .gallery{
+                width: 920px;
+                display: flex;
+                gap: 10px;
+                flex-wrap: nowrap;
+            }
+
+            .bat-img{
+                width: 220px;
+                height: 120px;
+                border: 2px solid aliceblue;
+                border-radius: 10px;
+            }
+
+            footer p {
+                color: rgb(233, 21, 187);
+                margin: 6px 0 0;  
+            }
+
+            .link{
+                color: rgb(255, 211, 0)
+                text-decoration: none;
+            }
+
+            .link:hover{
+                text-decoration:underline;
+            }
         </style>
     </head>
     <body id="topo">
         <div class="container" id="pagina">
-            <header calss="box" id="cabeçalho">
+            <header class="box" id="cabeçalho">
                 <div class="header-interno">
                     <h1 class="título">Site do Batman</h1>
                     <p class="subtítulo">
@@ -49,9 +118,9 @@
             </header>
             <nav class="box" id="menu">
                 <ul class="nav">
-                    <li><a class="nav link" href="#apresentação"> Quem é?</a></li>
-                    <li><a class="nav link" href="#galeria"> Galeria</a></li>
-                    <li><a class="nav link" href="#rodape"> Rodapé</a></li>
+                    <li><a class="nav-link" href="#apresentação"> Quem é?</a></li>
+                    <li><a class="nav-link" href="#galeria"> Galeria</a></li>
+                    <li><a class="nav-link" href="#rodape"> Rodapé</a></li>
                 </ul>
             </nav>
             <main id="conteudo">
@@ -74,12 +143,9 @@
                 <section class="box" id="galeria">
                     <h2>Galeria</h2>
                     <div class="gallery" id="galeira-imagens">
-                        <img class="bat-img" src="batman1.jpg"
-                        alt="Batman Absoluto" width="220" height="120">
-                        <img class="bat-img" src="batman2.jpg"
-                        alt="Batman" width="220" height="120">
-                        <img class="bat-img" src="batman3.jpg"
-                        alt="Batman que Ri" width="220" height="120">
+                        <img class="bat-img" src="batman1.jpg" alt="Batman Absoluto">
+                        <img class="bat-img" src="batman2.jpg" alt="Batman">
+                        <img class="bat-img" src="batman3.jpg" alt="Batman que Ri">
                     </div>
                 </section>
             </main>
